@@ -1,4 +1,5 @@
 import { useEffect,useState } from "react";
+import Card from "./components/Card";
 function App() {
 
   const [data, setData] = useState(null);
@@ -17,105 +18,37 @@ function App() {
       setLoading(false);
     })
    }, []);
-   console.log(data)
+ 
   return (
     <div className="App">
       <h2>Crypto Exchanges</h2>
 
       <div className="container">
 
-        
-      <div className="card">
-        <div className="logo">
-            <img src={data[0].image} alt="" />
-          </div>
-        <div className="name">
-            {data[0].name}
-          </div>
-          
+      {!loading && <Card list = {data} number={0}/>}
 
-      </div>
-      <div className="card">
-      <div className="logo">
-            <img src={data[1].image} alt="" />
-          </div>
-        <div className="name">
-            {data[1].name}
-          </div>
-      </div>
-      
-      
-      <div className="card">
-      <div className="logo">
-            <img src={data[2].image} alt="" />
-          </div>
-        <div className="name">
-            {data[2].name}
-          </div>
-      </div>
-
-      </div>
+      {!loading && <Card list = {data} number={1}/>}
 
 
-      <div className="container">
+      {!loading && <Card list = {data} number={2}/>}
 
-      <div className="card">
-      <div className="logo">
-            <img src={data[3].image} alt="" />
-          </div>
-        <div className="name">
-            {data[3].name}
-          </div>
-      </div>
-      <div className="card">
-      <div className="logo">
-            <img src={data[4].image} alt="" />
-          </div>
-        <div className="name">
-            {data[4].name}
-          </div>
-      </div> 
-      
-      <div className="card">
-      <div className="logo">
-            <img src={data[5].image} alt="" />
-          </div>
-        <div className="name">
-            {data[5].name}
-          </div>
-      </div>
+      {!loading && <Card list = {data} number={3}/>}
 
-      </div>
+      {!loading && <Card list = {data} number={4}/>}
 
-      <div className="container">
+      {!loading && <Card list = {data} number={5}/>}
 
-      <div className="card">
-        <div className="logo">
-            <img src={data[6].image} alt="" />
-          </div>
-        <div className="name">
-            {data[6].name}
-          </div>
-      </div>
 
-      
-      <div className="card">
-      <div className="logo">
-            <img src={data[7].image} alt="" />
-          </div>
-        <div className="name">
-            {data[7].name}
-          </div>
-      </div> 
-      
-      <div className="card">
-      <div className="logo">
-            <img src={data[8].image} alt="" />
-          </div>
-        <div className="name">
-            {data[8].name}
-          </div>
-      </div>
+      {!loading && <Card list = {data} number={6}/>}
+
+      {!loading && <Card list = {data} number={7}/>}
+
+      {!loading && <Card list = {data} number={8}/>}
+
+      {!loading && <Card list = {data} number={9}/>}
+
+
+
       </div>
       
     </div>
