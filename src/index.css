@@ -44,9 +44,15 @@ h2{
   .container{
     grid-template-columns: auto auto;
   }
+ 
+}
 
-  
-  
+@media only screen and (max-width: 1800px) and (min-width: 1600px) {
+
+  .container{
+    grid-template-columns: auto auto auto auto;
+  }
+ 
 }
 .card{
   position: inherit;
@@ -73,6 +79,7 @@ h2{
 }
 .logo{
   transition: all 1s ease-in-out;
+  padding-top: 10px;
 
 }
 .card:hover .logo{
@@ -92,10 +99,29 @@ h2{
 .link{
   padding-top: 10px;
   text-decoration: none;
+  padding-bottom: 10px;
+  transition: all 1s ease-in-out;
 }
 .link a{
 
-  text-decoration: none;
+  text-decoration:none;
   color:#A5D8FF;
+  transition: all 0.3s ease-in-out;
   
+}
+.link:hover a{
+
+  border: #A5D8FF dashed 2px;
+  padding: 5px;
+  text-decoration:none;
+  padding: 10px auto;
+
+}
+
+.country{
+  padding-top: 10px;
+}
+
+.rank{
+  padding-top: 10px;
 }
