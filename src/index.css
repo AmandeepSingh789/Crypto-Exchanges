@@ -21,16 +21,35 @@ h2{
 
 .container{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin-bottom: 20px;
-  box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto;
-  justify-items: end;
-
+  grid-template-columns: auto auto auto;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 10px;
 
 }
+@media only screen and (max-width: 630px) {
+
+  .container{
+    grid-template-columns: auto;
+  }
+
+  h2{
+    font-size: 30px;
+  }
+  
+}
+
+@media only screen and (max-width: 950px) and (min-width: 600px) {
+
+  .container{
+    grid-template-columns: auto auto;
+  }
+
+  
+  
+}
 .card{
+  position: inherit;
   height: 300px;
   width: 250px;
   border: 2px solid white;
@@ -41,18 +60,25 @@ h2{
   align-items: center;
   flex-direction: column;
   font-size: 1.5rem;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
   border-radius: 0%;
-  box-sizing: border-box;
+  
 }
 
 .card:hover{
   background-color:#131313;
   cursor: pointer;
-  border-radius: 10%;
-  transform: rotate(360deg);
+  border-radius: 15%;
+  
 }
+.logo{
+  transition: all 1s ease-in-out;
 
+}
+.card:hover .logo{
+  transform: rotate(360deg);
+
+}
 .name{
   padding-top: 10px;
 }
