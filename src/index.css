@@ -23,6 +23,12 @@ h2{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-bottom: 20px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: end;
+
+
 }
 .card{
   height: 300px;
@@ -37,14 +43,19 @@ h2{
   font-size: 1.5rem;
   transition: all 1s ease-in-out;
   border-radius: 0%;
+  box-sizing: border-box;
 }
 
 .card:hover{
-  background-color:#303030;
+  background-color:#131313;
   cursor: pointer;
   border-radius: 10%;
+  transform: rotate(360deg);
 }
 
+.name{
+  padding-top: 10px;
+}
 
 .volume24h{
   font-size: 1.5rem;
@@ -54,6 +65,7 @@ h2{
 
 .link{
   padding-top: 10px;
+  text-decoration: none;
 }
 .link a{
 

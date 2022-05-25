@@ -5,8 +5,8 @@ const Card = (props) => {
   return (
     
     <div className="container">
-
-    <div className="card">
+    
+    <div className="card" l>
              <div className="logo">  
                 <img src= {props.list[props.number].image} alt="" />
             </div>
@@ -19,11 +19,9 @@ const Card = (props) => {
             </div> 
 
             <div className="link">
-            <a href={props.list[props.number].url} title= {props.list[props.number].url}>Website</a>
+            <a target = "_blank" href={props.list[props.number].url} title= {props.list[props.number].url}>W e b s i t e</a>
             </div>
         </div>
-
-        
 
 
     </div>
